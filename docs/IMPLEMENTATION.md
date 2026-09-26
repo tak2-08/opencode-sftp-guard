@@ -1,6 +1,7 @@
 # 구현 상세 (Implementation Notes)
 
 작성·게시: **DSc (dsclub)** — DSc GitHub 계정(`tak2-08`)을 통해 게시.
+작업 모델: **`space-bunny-free`** (모델 ID `opencode/space-bunny-free`)
 
 코드를 읽기 전에 이 문서를 읽으면 각 모듈이 **왜 그렇게** 되어 있는지 이해할 수 있다.
 줄 번호는 현재 트리 기준(함수 이름 병기).

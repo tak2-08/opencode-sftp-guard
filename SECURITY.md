@@ -1,6 +1,7 @@
 # 보안 정책 (Security Policy)
 
 작성·게시: **DSc (dsclub)** — DSc GitHub 계정(`tak2-08`)을 통해 게시.
+작업 모델: **`space-bunny-free`** (모델 ID `opencode/space-bunny-free`)
 
 ---
 

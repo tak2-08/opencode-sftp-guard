@@ -4,7 +4,10 @@
   "private": true,
   "description": "Credential-isolated, human-gated SFTP file tools for OpenCode agents (container → host loopback)",
   "author": "DSc (dsclub) <tak2-08@users.noreply.github.com>",
-  "repository": { "type": "git", "url": "https://github.com/tak2-08/opencode-sftp-guard" },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tak2-08/opencode-sftp-guard"
+  },
   "scripts": {
     "test": "cd sftp-guard && node --test test/",
     "typecheck": "tsc -p sftp-guard/tsconfig.json"
@@ -15,5 +18,17 @@
   "devDependencies": {
     "@types/node": "^22.0.0",
     "typescript": "^5.9.0"
+  },
+  "x-authorship": {
+    "workModel": {
+      "name": "space-bunny-free",
+      "id": "opencode/space-bunny-free",
+      "role": "구현·테스트·문서 작성(AI 작업 모델)"
+    },
+    "publisher": {
+      "name": "DSc (dsclub)",
+      "githubAccount": "tak2-08",
+      "role": "리포지터리 개설·공개·커밋·유지"
+    }
   }
 }

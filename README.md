@@ -6,7 +6,8 @@
 
 | | |
 |---|---|
-| **작성 · 게시** | **DSc (dsclub)** — DSc GitHub 계정(`tak2-08`)을 통해 게시 |
+| **작업 모델 (모델명)** | **`space-bunny-free`** — 모델 ID `opencode/space-bunny-free` |
+| **작성 · 게시 주체** | **DSc (dsclub)** — DSc GitHub 계정(`tak2-08`)을 통해 게시 |
 | 대상 런타임 | OpenCode 1.18.22 (Bun) · 런타임 독립 코어는 Node 20+ 로도 실행 |
 | 의존성 | `ssh2-sftp-client@12.1.1` (→ `ssh2@1.17.0`) 단 하나, 고정 버전 |
 | 테스트 | **132개 전부 통과** — 단위 99 + 실제 SFTP 통신 통합 22 + 설정 fail-closed 11 |
@@ -44,6 +45,7 @@ integration tests against a real in-process SFTP server.
 
 | 문서 | 내용 |
 |---|---|
+| [`docs/AUTHORSHIP.md`](docs/AUTHORSHIP.md) | **출처와 책임** — 작업 모델(`space-bunny-free`)과 게시 주체(DSc (dsclub))의 구분, 모델이 한 일/하지 않은 일 |
 | [`docs/SECURITY-REVIEW.md`](docs/SECURITY-REVIEW.md) | §0 불변식 자기 점검(파일:라인 대응), 위협 모델, 발견해 고친 취약점 이력, 우회 벡터와 대응 |
 | [`docs/IMPLEMENTATION.md`](docs/IMPLEMENTATION.md) | 모듈별 구현 상세, 데이터 흐름, 경로 가드 3중 방제, 무결성 검증, 감사 로그 해시 체인 |
 | [`docs/OPENCODE-API-NOTES.md`](docs/OPENCODE-API-NOTES.md) | **실측 기반** OpenCode 1.18.22 API 노트 — 플러그인 개발자라면 이것부터 읽을 것 |
@@ -225,6 +227,10 @@ opencode --agent sftp-remote
 ```
 
 `--auto` 는 모든 권한 요청에 자동 승인한다. 이 플러그인은 이를 막을 수 없다(§12).
+
+> **출처 표기** — 이 코드를 작성한 AI 작업 모델은 **`space-bunny-free`** (모델 ID `opencode/space-bunny-free`) 이고,
+> 공개한 주체는 **DSc (dsclub)** 다. 모델이 한 일과 하지 않은 일, 책임 구분은
+> [`docs/AUTHORSHIP.md`](docs/AUTHORSHIP.md) 에 적어 두었다.
 
 ---
 
@@ -522,7 +528,7 @@ opencode-sftp-guard/            ← opencode 설정 디렉터리를 그대로 �
 ├── README.md                    이 문서
 ├── install.sh                   설치 스크립트 (DRY_RUN 지원, package.json 은 의존성만 병합)
 ├── package.json                 의존성 1개 고정 + test/typecheck 스크립트
-├── docs/                        상세 문서 4종
+├── docs/                        상세 문서 5종 (출처·보안·구현·API·운영)
 ├── plugins/sftp-guard.ts        오펜코드가 로드하는 진입점 (여기 하나만 둔다)
 ├── agents/                      sftp-remote.md · risk-auditor.md
 └── sftp-guard/
@@ -538,7 +544,13 @@ opencode-sftp-guard/            ← opencode 설정 디렉터리를 그대로 �
 
 ## 출처 · 게시
 
+- **작업 모델 (모델명): `space-bunny-free`** — 모델 ID `opencode/space-bunny-free`.
+  이 저장소의 **구현·테스트·문서 작성·게시 준비를 수행한 AI 작업 모델**이다.
+  아래 코드는 전부 이 모델이 작성했다.
 - **작성 및 게시: DSc (dsclub)** — DSc GitHub 계정(`tak2-08`)을 통해 공개 저장소에 게시.
+- **책임 구분**: 설계·코드·문서 초안 = AI 작업 모델(`space-bunny-free`)이 작성,
+  **공개 결정·게시·유지 책임 = DSc (dsclub) 계정 주체.** 모델명과 게시 주체는 서로 대체되지 않는다.
+  자세한 내용은 [`docs/AUTHORSHIP.md`](docs/AUTHORSHIP.md).
 - 대상 위협 프로파일은 **PHP + JS 웹 애플리케이션**(예: 그누보드5 기반 웹 에디터)이며,
   웹셸 · `.htaccess` 남용 · 실행 비트 부여가 주요 위험이다.
 - 이 저장소에는 자격증명·계정명·호스트 식별자·내부 경로가 포함되어 있지 않다.

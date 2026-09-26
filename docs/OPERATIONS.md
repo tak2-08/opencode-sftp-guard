@@ -1,6 +1,7 @@
 # 운영 (Operations)
 
 작성·게시: **DSc (dsclub)** — DSc GitHub 계정(`tak2-08`)을 통해 게시.
+작업 모델: **`space-bunny-free`** (모델 ID `opencode/space-bunny-free`)
 
 설치 후 실제로 손봐야 하는 지점과, 문제가 났을 때의 진단 순서를 모은다.
 

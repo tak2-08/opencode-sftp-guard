@@ -1,6 +1,7 @@
 # 보안 자기 점검 (Security Self-Review)
 
 작성·게시: **DSc (dsclub)** — DSc GitHub 계정(`tak2-08`)을 통해 게시.
+작업 모델: **`space-bunny-free`** (모델 ID `opencode/space-bunny-free`)
 
 이 문서는 "의도"가 아니라 **코드 위치**로 불변식을 확인한다. 행 번호는 현재 트리 기준이며
 함수 이름을 함께 적어 행 번호가 바뀌어도 찾을 수 있게 했다.

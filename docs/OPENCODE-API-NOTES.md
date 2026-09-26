@@ -1,6 +1,7 @@
 # OpenCode 1.18.22 API 실측 노트
 
 작성·게시: **DSc (dsclub)** — DSc GitHub 계정(`tak2-08`)을 통해 게시.
+작업 모델: **`space-bunny-free`** (모델 ID `opencode/space-bunny-free`)
 
 이 문서는 **1.18.22 를 실제로 조사해서 얻은 사실**이다. 문서와 실제 동작이 다른 지점이 있어,
 플러그인을 만들 때 필요한 사람이 시간을 아꼈으면 한다. 대상 환경: `opencode 1.18.22`.
