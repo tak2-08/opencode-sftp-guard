@@ -1,0 +1,21 @@
+{
+  "$comment": "sftp-guard 타입 점검용 설정. 런타임 의존성이 아니다 — 선택적 개발 도구. 사용법: npx -y typescript@5.9 tsc -p .opencode/sftp-guard/tsconfig.json  (또는 설치된 tsc 로 동일). noEmit=true 이므로 산출물이 없다.",
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowJs": true,
+    "checkJs": false,
+    "strict": false,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "..",
+    "paths": {
+      "@opencode-ai/plugin": ["node_modules/@opencode-ai/plugin/dist/index.d.ts"]
+    }
+  },
+  "include": ["lib/oc/**/*.ts", "lib/core/**/*.mjs", "../plugins/sftp-guard.ts"]
+}

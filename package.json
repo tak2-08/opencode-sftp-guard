@@ -1,0 +1,19 @@
+{
+  "name": "opencode-sftp-guard",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Credential-isolated, human-gated SFTP file tools for OpenCode agents (container → host loopback)",
+  "author": "DSc (dsclub) <tak2-08@users.noreply.github.com>",
+  "repository": { "type": "git", "url": "https://github.com/tak2-08/opencode-sftp-guard" },
+  "scripts": {
+    "test": "cd sftp-guard && node --test test/",
+    "typecheck": "tsc -p sftp-guard/tsconfig.json"
+  },
+  "dependencies": {
+    "ssh2-sftp-client": "12.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.9.0"
+  }
+}

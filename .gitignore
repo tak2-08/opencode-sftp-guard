@@ -1,0 +1,12 @@
+node_modules/
+package-lock.json
+bun.lock
+# 로컬 전용(비밀·정책) — 정본은 저장소 밖 ~/.config/opencode/ 에 있다
+sftp-guard/sftp-secrets.json
+sftp-guard/sftp-guard.json
+sftp-guard/tsconfig.local.json
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+.DS_Store
